@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+
+<header class="header">
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__menu menu">
+        <li class="menu__item menu__item--active">
+          <a class="menu__item" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item">Форма отзыва</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <a class="header__logo">
+    <img class="header__logo-image" src="http://placehold.it/102x83" alt="Седона" width="102" height="83">
+  </a>
+  <div class="header__banner">
+    <img class="header__taglines" src="http://placehold.it/230x40"
+         alt="Sedona" width="230" height="40">
+  </div>
+</header>
+
+<main class="main">
+
+  <h1 class="main__title">Оставьте свой отзыв</h1>
+  <p class="main__preface">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+    достопримечательностях</p>
+  <form class="main__form form">
+    <fieldset class="form__fieldset block">
+      <div class="form__wrapper">
+        <legend class="form__legend">Представьтесь:</legend>
+        <label class="form__light-label" for="first-name">Имя<sup>*</sup>:</label>
+        <input class="form__input form__input--text" id="first-name" name="first-name" type="text" placeholder="Петр">
+        <label class="form__light-label" for="second-name">Фамилия<sup>*</sup>:</label>
+        <input class="form__input form__input--text" id="second-name" name="second-name" type="text" placeholder="Иванов">
+        <label class="form__light-label" for="middle-name">Отчество:</label>
+        <input class="form__input form__input--text" id="middle-name" name="middle-name" type="text" placeholder="Александрович">
+      </div>
+    </fieldset>
+    <fieldset class="form__fieldset block">
+      <legend class="form__legend">Контактная информация:</legend>
+      <div class="form__wrapper">
+        <label class="form__light-label" for="tel">Контактный телефон<sup>*</sup>:</label>
+        <input class="form__input form__input--tel" id="tel" name="tel" type="tel" placeholder="Введите телефон">
+        <label class="form__light-label" for="email">Электронная почта<sup>*</sup>:</label>
+        <input class="form__input form__input--email" id="email" name="email" type="email" placeholder="Введите e-mail">
+      </div>
+    </fieldset>
+    <fieldset class="form__fieldset block">
+      <legend class="form__legend">Ваше общее впечатление:</legend>
+      <input class="form__input form__input--radio form__input__radio--checked" id="positive" name="impression" type="radio" value="positive" checked>
+      <label class="form__strong-label" for="positive">Скорее положительное</label>
+      <input class="form__input form__input--radio" id="negative" name="impression" type="radio" value="negative">
+      <label class="form__strong-label" for="negative">Скорее отрицательное</label>
+      <input class="form__input form__input--radio" id="noanswer" name="impression" type="radio" value="noanswer">
+      <label class="form__strong-label" for="noanswer">Затрудняюсь ответить</label>
+    </fieldset>
+    <fieldset class="form__fieldset block">
+      <legend class="form__legend">Посещенные достопримечательности:</legend>
+      <input class="form__input form__input--checkbox form__input__checkbox--checked" id="devilsbridge" name="sight" type="checkbox" value="devilsbridge" checked>
+      <label class="form__strong-label" for="devilsbridge">Мост Дьявола</label>
+      <input class="form__input form__input--checkbox form__input__checkbox--checked" id="bellmountain" name="sight" type="checkbox" value="bellmountain" checked>
+      <label class="form__strong-label" for="bellmountain">Гора-Колокол</label>
+      <input class="form__input form__input--checkbox form__input__checkbox--checked" id="slidepark" name="sight" type="checkbox" value="slidepark" checked>
+      <label class="form__strong-label" for="slidepark">Слайд-парк</label>
+      <input class="form__input form__input--checkbox" id="redrocks" name="sight" type="checkbox" value="redrocks">
+      <label class="form__strong-label" for="redrocks">Красные скалы</label>
+    </fieldset>
+    <fieldset class="form__fieldset block">
+      <legend class="form__legend">Опишите свои эмоции:</legend>
+      <textarea class="form__input form__input--textarea">Опишите подробно все свои восторги</textarea>
+    </fieldset>
+    <button class="button" type="submit">Отправить отзыв</button>
+  </form>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__wrapper">
+    <p class="footer__hashtag">#visitsedona</p>
+    <ul class="footer__social social">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--twitter">Twitter</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--facebook">Facebook</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--youtube">YouTube</a>
+      </li>
+    </ul>
+    <p class="footer__copyright copyright">
+      <span>Разработано</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <img class="copyright__logo" src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+      </a>
+    </p>
+  </div>
+</footer>
+
+<section class="popup popup--hidden">
+  <h1>Что-то пошло не так!</h1>
+  <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="button">Ok</button>
+</section>
+
+<section class="popup popup--hidden">
+  <h1>Ваш отзыв отправлен!</h1>
+  <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+  <button class="button">Закрыть окно</button>
+</section>
+
+</body>
+</html>
