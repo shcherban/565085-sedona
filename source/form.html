@@ -11,14 +11,14 @@
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__menu menu">
-        <li class="menu__item menu__item--active">
+        <li class="menu__item">
           <a class="menu__item" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
           <a class="menu__item" href="photo.html">Фото и видео</a>
         </li>
         <li class="menu__item">
-          <a class="menu__item">Форма отзыва</a>
+          <a class="menu__item menu__item--active">Форма отзыва</a>
         </li>
         <li class="menu__item">
           <a class="menu__item" href="https://htmlacademy.ru">HTML Academy</a>
@@ -37,10 +37,12 @@
 <main class="main">
 
   <h1 class="main__title">Оставьте свой отзыв</h1>
-  <p class="main__preface">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-    достопримечательностях</p>
+  <p class="main__preface">
+    Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+    достопримечательностях
+  </p>
   <form class="main__form form" action="https://echo.htmlacademy.ru">
-    <fieldset class="form__fieldset block">
+    <fieldset class="form__fieldset">
       <div class="form__wrapper">
         <legend class="form__legend">Представьтесь:</legend>
         <label class="form__light-label" for="first-name">Имя<sup>*</sup>:</label>
@@ -51,7 +53,7 @@
         <input class="form__input form__input--text" id="middle-name" name="middle-name" type="text" placeholder="Александрович">
       </div>
     </fieldset>
-    <fieldset class="form__fieldset block">
+    <fieldset class="form__fieldset">
       <legend class="form__legend">Контактная информация:</legend>
       <div class="form__wrapper">
         <label class="form__light-label" for="tel">Контактный телефон<sup>*</sup>:</label>
@@ -60,7 +62,7 @@
         <input class="form__input form__input--email" id="email" name="email" type="email" placeholder="Введите e-mail">
       </div>
     </fieldset>
-    <fieldset class="form__fieldset block">
+    <fieldset class="form__fieldset">
       <legend class="form__legend">Ваше общее впечатление:</legend>
       <input class="form__input form__input--radio form__input__radio--checked" id="positive" name="impression" type="radio" value="positive" checked>
       <label class="form__strong-label" for="positive">Скорее положительное</label>
@@ -69,7 +71,7 @@
       <input class="form__input form__input--radio" id="noanswer" name="impression" type="radio" value="noanswer">
       <label class="form__strong-label" for="noanswer">Затрудняюсь ответить</label>
     </fieldset>
-    <fieldset class="form__fieldset block">
+    <fieldset class="form__fieldset">
       <legend class="form__legend">Посещенные достопримечательности:</legend>
       <input class="form__input form__input--checkbox form__input__checkbox--checked" id="devilsbridge" name="sight" type="checkbox" value="devilsbridge" checked>
       <label class="form__strong-label" for="devilsbridge">Мост Дьявола</label>
@@ -80,7 +82,7 @@
       <input class="form__input form__input--checkbox" id="redrocks" name="sight" type="checkbox" value="redrocks">
       <label class="form__strong-label" for="redrocks">Красные скалы</label>
     </fieldset>
-    <fieldset class="form__fieldset block">
+    <fieldset class="form__fieldset">
       <legend class="form__legend">Опишите свои эмоции:</legend>
       <textarea class="form__input form__input--textarea">Опишите подробно все свои восторги</textarea>
     </fieldset>
