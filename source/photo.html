@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+
+<header class="header">
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__menu menu">
+        <li class="menu__item">
+          <a class="menu__item" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item menu__item--active">Фото и видео</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <a class="header__logo">
+    <img class="header__logo-image" src="http://placehold.it/102x83" alt="Седона" width="102" height="83">
+  </a>
+  <div class="header__banner">
+    <img class="header__taglines" src="http://placehold.it/230x40" alt="Sedona" width="230" height="40">
+  </div>
+</header>
+
+<main class="main">
+
+  <h1 class="main__title">Фото и видео</h1>
+  <p class="main__preface">
+    Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+    экономике.
+  </p>
+
+  <section class="main__photos">
+    <h2 class="visually-hidden">Фото</h2>
+    <div class="main__wrapper">
+      <a class="main__photo photo" href="#">
+        <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
+        <b class="photo__legend">Неродные просторы</b>
+        <p class="photo__autor">Автор фото: Борис</p>
+        <p class="photo__likes">1350</p>
+      </a>
+      <a class="main__photo photo" href="#">
+        <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280"
+              alt="Местная растительность">
+        <b class="photo__legend">Местная растительность</b>
+        <p class="photo__autor">Автор фото: Сергей</p>
+        <p class="photo__likes">143</p>
+      </a>
+      <a class="main__photo photo" href="#">
+        <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
+        <b class="photo__legend">Дорога на север</b>
+        <p class="photo__autor">Автор фото: Петр</p>
+        <p class="photo__likes">96</p>
+      </a>
+      <a class="main__photo photo" href="#">
+        <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Мост Дьявола">
+        <b class="photo__legend">Мост Дьявола</b>
+        <p class="photo__autor">Автор фото: Антон</p>
+        <p class="photo__likes">254</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="main__video video">
+    <h2 class="visually-hidden">Видеопрезентация</h2>
+    <b>Все еще сомневаетесь?</b>
+    <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+    <video class="video__player player"></video>
+    <div class="player__control-panel control-panel">
+      <div class="control-panel__volume volume">
+        <span class="volume__scale"></span>
+        <span class="volume__slider"></span>
+      </div>
+      <div class="control-panel__buttons buttons">
+        <button class="buttons__replay">смотреть с начала</button>
+        <button class="buttons__subtitles">субтитры</button>
+        <button class="buttons__fullscreen">развернуть на весь экран</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__wrapper">
+    <p class="footer__hashtag">#visitsedona</p>
+    <ul class="footer__social social">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--twitter">Twitter</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--facebook">Facebook</a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--youtube">YouTube</a>
+      </li>
+    </ul>
+    <p class="footer__copyright copyright">
+      <span>Разработано</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <img class="copyright__logo" src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+      </a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
