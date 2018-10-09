@@ -1,0 +1,16 @@
+.video {
+  text-align: center;
+  background-image: url("img/video-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  b {
+    font-size: 18px;
+    line-height: 26px;
+    color: $black-txtcolor;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-gray-txtcolor;
+  }
+}

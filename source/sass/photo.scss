@@ -1,0 +1,20 @@
+.photo {
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.photo__legend {
+  font-weight: bold;
+  color: $black-txtcolor;
+}
+
+.photo__autor {
+  color: $dark-gray-txtcolor;
+  text-transform: none;
+}
+
+.photo__likes {
+  font-weight: bold;
+  color: $black-txtcolor;
+}

@@ -1,0 +1,26 @@
+.advantage {
+  text-align: center;
+}
+
+.advantage__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black-txtcolor;
+}
+
+.advantage__number,
+.advantage__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: $dark-gray-txtcolor;
+}
+
+.advantage--colorful {
+  background-color: $sky-blue;
+  .advantage__title,
+  .advantage__number,
+  .advantage__text {
+    color: $white-txtcolor;
+  }
+}
