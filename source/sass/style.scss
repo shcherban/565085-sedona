@@ -1,11 +1,10 @@
 @import "normalize";
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
 @import "variables";
 @import "header";
 @import "menu";
 @import "main-nav";
 @import "main";
-@import "advantages";
 @import "advantage";
 @import "feature-list";
 @import "advantage-list";
@@ -25,4 +24,3 @@ body {
   width: $mobile-width;
   font-family: "PT Sans", sans-serif;
 }
-
