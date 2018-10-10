@@ -1,6 +1,6 @@
 @import "normalize";
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
 @import "variables";
+@import "base";
 @import "header";
 @import "menu";
 @import "main-nav";
@@ -19,8 +19,3 @@
 @import "player";
 @import "form";
 @import "popup";
-
-body {
-  width: $mobile-width;
-  font-family: "PT Sans", sans-serif;
-}
