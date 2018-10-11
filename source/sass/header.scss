@@ -1,0 +1,27 @@
+.header {
+  box-sizing: border-box;
+  background-color: $white-bgcolor;
+}
+
+.header__logo {
+  position: absolute;
+}
+
+.header__banner {
+  box-sizing: border-box;
+  height: 389px;
+  padding-top: 90px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.header__tagline {
+  display: block;
+  margin: 0 auto;
+  //margin-top: 90px;
+}
+
+.header__banner--short {
+  height: 158px;
+}

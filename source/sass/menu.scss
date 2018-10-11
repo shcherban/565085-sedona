@@ -1,0 +1,19 @@
+.menu {
+  margin: 0;
+  padding: 0 0 56px 0;
+  list-style: none;
+}
+
+.menu__link {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  background-color: $sky-blue;
+  color: $white-txtcolor;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

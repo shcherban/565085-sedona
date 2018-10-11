@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -12,35 +13,38 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__menu menu">
         <li class="menu__item">
-          <a class="menu__item" href="index.html">Главная</a>
+          <a class="menu__link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu__item" href="photo.html">Фото и видео</a>
+          <a class="menu__link" href="photo.html">Фото и видео</a>
         </li>
         <li class="menu__item">
-          <a class="menu__item menu__item--active">Форма отзыва</a>
+          <a class="menu__link menu__link--active">Форма отзыва</a>
         </li>
         <li class="menu__item">
-          <a class="menu__item" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="menu__link" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </div>
   </nav>
   <a class="header__logo">
-    <img class="header__logo-image" src="http://placehold.it/102x83" alt="Седона" width="102" height="83">
+    <img class="header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83">
   </a>
-  <div class="header__banner">
-    <img class="header__taglines" src="http://placehold.it/230x40" alt="Sedona" width="230" height="40">
+  <div class="header__banner header__banner--short">
+    <img class="header__tagline" src="img/text-sedona.svg" alt="Sedona" width="230" height="40">
   </div>
 </header>
 
 <main class="main">
 
-  <h1 class="main__title">Оставьте свой отзыв</h1>
-  <p class="main__preface">
-    Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-    достопримечательностях
-  </p>
+  <header class="main__header">
+    <h1 class="main__title">Оставьте свой отзыв</h1>
+    <p class="main__preface">
+      Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      достопримечательностях
+    </p>
+  </header>
+
   <form class="main__form form" action="https://echo.htmlacademy.ru">
     <fieldset class="form__fieldset">
       <div class="form__wrapper">
@@ -108,20 +112,20 @@
     <p class="footer__copyright copyright">
       <span>Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <img class="copyright__logo" src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+        <img class="copyright__logo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
       </a>
     </p>
   </div>
 </footer>
 
 <section class="popup popup--hidden">
-  <h1>Что-то пошло не так!</h1>
+  <h2>Что-то пошло не так!</h2>
   <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
   <button class="button">Ok</button>
 </section>
 
 <section class="popup popup--hidden">
-  <h1>Ваш отзыв отправлен!</h1>
+  <h2>Ваш отзыв отправлен!</h2>
   <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
   <button class="button">Закрыть окно</button>
 </section>

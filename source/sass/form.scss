@@ -1,0 +1,20 @@
+.form__legend {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black-txtcolor;
+}
+
+.form__light-label {
+  font-size: 14px;
+  line-height: 26px;
+  color: $dark-gray-txtcolor;
+}
+
+.form__strong-label {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
