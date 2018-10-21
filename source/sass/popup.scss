@@ -10,8 +10,52 @@
   }
 
   p {
+    width: 230px;
+    margin: 0 auto;
     font-size: 14px;
     line-height: 24px;
     color: $dark-gray-txtcolor;
+  }
+
+  @media (min-width: $tablet-width) {
+    h2 {
+      width: 250px;
+      margin: 0 auto;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    p {
+      width: 277px;
+    }
+  }
+}
+
+.popup--ok {
+  @media (min-width: $tablet-width) {
+    h2,
+    p {
+      width: 414px;
+    }
+  }
+}
+
+.popup__ok-button {
+  width: 180px;
+  margin: 0 auto;
+  margin-tom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+  }
+}
+
+.popup__close-button {
+  width: 280px;
+  margin: 0 auto;
+  margin-tom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
   }
 }

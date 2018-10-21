@@ -1,6 +1,17 @@
 .advantage-list {
+  box-sizing: border-box;
+  min-height: 503px;
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: $light-gray-bgcolor;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-height: 256px;
+  }
+}
+
+.advantage-list__item {
+  border: 1px solid $light-gray-bgcolor;
 }

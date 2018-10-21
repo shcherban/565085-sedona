@@ -1,12 +1,35 @@
 .advantage {
+  box-sizing: border-box;
+  min-height: 168px;
+  margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+  }
 }
 
 .advantage__title {
+  margin-top: 26px;
+  margin-bottom: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   color: $black-txtcolor;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    margin: 0 auto;
+    margin-top: 44px;
+
+    font-size: 21px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .advantage__number,
@@ -16,12 +39,126 @@
   color: $dark-gray-txtcolor;
 }
 
+.advantage__number {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 11px;
+  }
+}
+
+.advantage__text {
+  width: 250px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: $tablet-width - 1px) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 290px;
+
+    br:first-child {
+      display: none;
+    }
+  }
+}
+
+.advantage__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantage--colorful:first-child {
+  .advantage__description {
+    order: 0;
+    min-height: 230px;
+  }
+
+  .advantage__title {
+    margin-top: 76px;
+  }
+}
+
 .advantage--colorful {
-  background-color: $sky-blue;
+  width: 100%;
+
+  .advantage__description {
+    box-sizing: border-box;
+    min-height: 191px;
+    background-color: $sky-blue;
+    border: 1px solid $sky-blue;
+    order: 1;
+  }
 
   .advantage__title,
   .advantage__number,
   .advantage__text {
     color: $white-txtcolor;
+  }
+
+  .advantage__title {
+    margin-top: 38px;
+    margin-bottom: 0;
+  }
+
+  .advantage__number {
+    margin-top: 9px;
+  }
+
+  .advantage__text {
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    .advantage__description {
+      width: 256px;
+    }
+
+    .advantage__title,
+    &:first-child .advantage__title {
+      margin-top: 44px;
+    }
+
+    .advantage__text {
+      width: 170px;
+      margin-top: 22px;
+    }
+
+    .advantage__image {
+      flex-grow: 1;
+      height: 256px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .advantage__description {
+      width: 400px;
+    }
+
+    .advantage__title,
+    &:first-child .advantage__title {
+      margin-top: 52px;
+    }
+
+    .advantage__text {
+      width: 270px;
+      margin-top: 21px;
+    }
+  }
+
+  @media (max-width: $desktop-width - 1px) {
+    .advantage__text br {
+      display: none;
+    }
   }
 }

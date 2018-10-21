@@ -1,4 +1,8 @@
 .button {
+  display: block;
+  box-sizing: border-box;
+  min-height: 58px;
+  padding-top: 16px;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;

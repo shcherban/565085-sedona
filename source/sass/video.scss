@@ -1,22 +1,61 @@
 .video {
+  box-sizing: border-box;
+  min-height: 459px;
   text-align: center;
+  border: 1px solid $white-bgcolor;
 
   b {
+    display: block;
+    margin-top: 37px;
     font-size: 18px;
     line-height: 26px;
     color: $black-txtcolor;
   }
 
   p {
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 30px;
+
     font-size: 14px;
     line-height: 24px;
     color: $dark-gray-txtcolor;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 744px;
+
+    b {
+      margin-top: 27px;
+      font-size: 30px;
+    }
+
+    p {
+      width: 425px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 746px;
+
+    b {
+      margin-top: 33px;
+    }
+  }
 }
 
 .video__player {
-  height: 201px;
+  width: $mobile-width;
+  height: 267px;
+  margin: 0 auto;
+  margin-top: 30px;
+
   background-image: url("../img/video-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
 }

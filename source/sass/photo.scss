@@ -1,20 +1,94 @@
 .photo {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 414px;
+  margin: 0 auto;
+
   font-size: 14px;
   line-height: 24px;
   text-decoration: none;
+
+  border-top: 1px solid $dark-gray-border-color;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 347px;
+    margin: 0;
+
+    border: none;
+
+    &:first-child {
+      width: 648px;
+      min-height: 480px;
+    }
+
+    &__info {
+      box-sizing: border-box;
+      min-height: 80px;
+      display: flex;
+
+      background-color: $base-bgcolor;
+    }
+
+    &__likes {
+      width: 85px;
+      margin-left: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    min-height: 267px;
+
+    &:first-child {
+      width: 1200px;
+      min-height: 398px;
+    }
+
+    &__info {
+      margin-top: -81px;
+
+      background-color: $black-30percents-opacity;
+    }
+  }
+}
+
+.photo:last-child {
+  border-bottom: 1px solid $dark-gray-border-color;
+}
+
+.photo__image {
+  display: block;
+  margin-top: 22px;
 }
 
 .photo__legend {
+  display: block;
+  margin-top: 14px;
+
   font-weight: bold;
   color: $black-txtcolor;
 }
 
 .photo__autor {
+  margin: 0;
+
   color: $dark-gray-txtcolor;
   text-transform: none;
 }
 
 .photo__likes {
+  margin-top: 5px;
+
   font-weight: bold;
   color: $black-txtcolor;
+}
+
+@media (min-width: $desktop-width) {
+  .photo__legend,
+  .photo__autor,
+  .photo__likes {
+    color: $white-txtcolor;
+  }
 }
