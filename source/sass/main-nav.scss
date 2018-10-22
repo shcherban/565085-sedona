@@ -22,21 +22,25 @@
 }
 
 .main-nav--menu-closed {
-  @media (max-width: $tablet-width) {
+  .menu {
+    display: none;
+  }
+
+  .main-nav__toggle--close {
+    display: none;
+  }
+
+  .main-nav__toggle--open {
+    display: block;
+  }
+
+  .header__logo {
+    top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
     .menu {
-      display: none;
-    }
-
-    .main-nav__toggle--close {
-      display: none;
-    }
-
-    .main-nav__toggle--open {
-      display: block;
-    }
-
-    .header__logo {
-      top: 0;
+      display: flex;
     }
   }
 }

@@ -17,17 +17,19 @@
   line-height: 26px;
   color: $black-txtcolor;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 155px;
     margin: 0 auto;
     margin-top: 44px;
 
     font-size: 21px;
-  }
 
-  @media (max-width: $tablet-width - 1px) {
     br {
-      display: none;
+      display: inline;
     }
   }
 }
@@ -50,15 +52,16 @@
 .advantage__text {
   width: 250px;
   margin: 0 auto;
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: 170px;
     margin-top: 20px;
-  }
 
-  @media (max-width: $tablet-width - 1px) {
     br {
-      display: none;
+      display: inline;
     }
   }
 
@@ -115,6 +118,10 @@
 
   .advantage__text {
     width: 280px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -153,12 +160,10 @@
     .advantage__text {
       width: 270px;
       margin-top: 21px;
-    }
-  }
 
-  @media (max-width: $desktop-width - 1px) {
-    .advantage__text br {
-      display: none;
+      br {
+        display: inline;
+      }
     }
   }
 }

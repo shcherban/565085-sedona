@@ -5,14 +5,16 @@
   background-color: $white-bgcolor;
   border: 1px solid $white-bgcolor;
 
-  @media (max-width: $tablet-width - 1px) {
-    br {
-      display: none;
-    }
+  br {
+    display: none;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 317px;
+
+    br {
+      display: inline;
+    }
   }
 
   @media (min-width: $desktop-width) {

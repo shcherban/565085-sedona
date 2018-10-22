@@ -14,14 +14,6 @@
   position: relative;
   background-color: $white-bgcolor;
   border: 1px solid $white-bgcolor;
-
-  @media (min-width: $tablet-width) {
-    min-height: 249px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 287px;
-  }
 }
 
 .main__header::before {
@@ -45,14 +37,16 @@
   }
 }
 
-@media (max-width: $tablet-width) {
-  .main__header::after {
-    content: "";
-    display: block;
-    height: 37px;
-    bottom: -37px;
-    position: absolute;
-    background-image: url("../img/bg-triangle.svg");
+.main__header::after {
+  content: "";
+  display: block;
+  height: 37px;
+  bottom: -37px;
+  position: absolute;
+  background-image: url("../img/bg-triangle.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
