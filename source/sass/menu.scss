@@ -1,13 +1,24 @@
 .menu {
   margin: 0;
-  padding: 0 0 56px 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 }
 
 .menu__link {
+  box-sizing: border-box;
+  height: $menu-bar-height;
   display: block;
   padding-top: 8px;
-  padding-bottom: 7px;
   background-color: $sky-blue;
   color: $white-txtcolor;
   text-align: center;
@@ -16,4 +27,37 @@
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    padding-top: 14px;
+    font-size: 14px;
+    line-height: 26px;
+    color: $black-txtcolor;
+    background-color: $white-bgcolor;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+  }
+}
+
+.menu__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-right: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 122px;
+  }
+}
+
+.menu__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    margin-left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 122px;
+  }
 }

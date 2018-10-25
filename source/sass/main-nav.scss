@@ -1,3 +1,46 @@
 .main-nav__toggle {
   position: absolute;
+  top: 17px;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--open {
+  display: none;
+}
+
+.main-nav__menu-bar {
+  height: 56px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--menu-closed {
+  .menu {
+    display: none;
+  }
+
+  .main-nav__toggle--close {
+    display: none;
+  }
+
+  .main-nav__toggle--open {
+    display: block;
+  }
+
+  .header__logo {
+    top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    .menu {
+      display: flex;
+    }
+  }
 }

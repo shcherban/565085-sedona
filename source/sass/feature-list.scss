@@ -1,7 +1,28 @@
 .feature-list {
-  margin: 0;
+  box-sizing: border-box;
+  width: $mobile-width;
+  min-height: 415px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  background-color: $white-bgcolor;
+  border: 1px solid $white-bgcolor;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 330px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.feature-list__item {
+  box-sizing: border-box;
+  border: 1px solid $white-bgcolor;
+
+  @media (min-width: $tablet-width) {
+    width: 33%;
+  }
 }
 
 .feature-list__title {
@@ -9,10 +30,33 @@
   font-size: 18px;
   line-height: 26px;
   color: $black-txtcolor;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 21px;
+  }
 }
 
 .feature-list__text {
   font-size: 14px;
   line-height: 21px;
   color: $dark-gray-txtcolor;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feature-list__item--accommodation {
+    order: 1;
+  }
+
+  .feature-list__item--food {
+    order: 2;
+  }
+
+  .feature-list__item--souvenirs {
+    order: 3;
+  }
 }

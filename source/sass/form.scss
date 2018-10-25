@@ -18,3 +18,134 @@
   font-size: 18px;
   line-height: 26px;
 }
+
+.form {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
+.form__fieldset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+}
+
+.form__fieldset--personal-data {
+  min-height: 305px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 354px;
+  }
+}
+
+.form__fieldset--contacts {
+  min-height: 287px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 223px;
+  }
+}
+
+.form__fieldset--impression {
+  min-height: 289px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 354px;
+  }
+}
+
+.form__fieldset--visited-sights {
+  min-height: 409px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 202px;
+  }
+}
+
+.form__fieldset--emotions {
+  min-height: 222px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 230px;
+  }
+}
+
+.form__footer {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    order: 6;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__submit-button {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    margin-left: 0;
+  }
+}
+
+.form__footnote {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
