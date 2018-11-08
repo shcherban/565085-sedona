@@ -1,8 +1,17 @@
 .popup {
+  box-sizing: border-box;
+  width: 320px;
+  position: fixed;
+  top: 20px;
+  left: calc(50% - 320px / 2);
   text-align: center;
   text-transform: uppercase;
 
+  background-color: $white-txtcolor;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
   h2 {
+    margin-top: 60px;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
@@ -12,6 +21,7 @@
   p {
     width: 230px;
     margin: 0 auto;
+    margin-top: 40px;
     font-size: 14px;
     line-height: 24px;
     color: $dark-gray-txtcolor;
@@ -21,6 +31,7 @@
     h2 {
       width: 250px;
       margin: 0 auto;
+      margin-top: 64px;
       font-size: 30px;
       line-height: 40px;
     }
@@ -31,8 +42,11 @@
   }
 }
 
-.popup--ok {
+.popup--success {
   @media (min-width: $tablet-width) {
+    width: 640px;
+    left: calc(50% - 640px / 2);
+
     h2,
     p {
       width: 414px;
@@ -43,19 +57,46 @@
 .popup__ok-button {
   width: 180px;
   margin: 0 auto;
-  margin-tom: 10px;
+  margin-top: 24px;
+  margin-bottom: 35px;
+
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
     width: 272px;
+    margin-top: 30px;
+    margin-bottom: 49px;
   }
 }
 
 .popup__close-button {
   width: 280px;
   margin: 0 auto;
-  margin-tom: 10px;
+
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
     width: 458px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
+}
+
+.popup--failure {
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    left: calc(50% - 400px / 2);
+  }
+}
+
+.popup__close-button-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: $base-bgcolor;
+}
+
+.popup--hidden {
+  display: none;
 }

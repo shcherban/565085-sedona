@@ -7,12 +7,12 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<body>
+<body id="form">
 
 <header class="header">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="main-nav__menu menu">
         <li class="menu__item">
           <a class="menu__link" href="index.html">Главная</a>
@@ -29,7 +29,7 @@
       </ul>
     </div>
     <div class="main-nav__menu-bar">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <a class="header__logo">
       <img class="header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83">
@@ -42,13 +42,13 @@
 
 <main class="main">
 
-  <header class="main__header main__header--form">
+  <div class="main__header main__header--form">
     <h1 class="main__title">Оставьте свой отзыв</h1>
     <p class="main__preface">
       Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
       достопримечательностях
     </p>
-  </header>
+  </div>
 
   <form class="main__form form" action="https://echo.htmlacademy.ru">
     <fieldset class="form__fieldset form__fieldset--personal-data">
@@ -114,13 +114,13 @@
     <p class="footer__hashtag">#visitsedona</p>
     <ul class="footer__social social">
       <li class="social__item">
-        <a href="#" class="social__link social__link--twitter">Twitter</a>
+        <a href="#" class="social__link social__link--twitter"><span class="visually-hidden">Twitter</span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--facebook">Facebook</a>
+        <a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Facebook</span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--youtube">YouTube</a>
+        <a href="#" class="social__link social__link--youtube"><span class="visually-hidden">YouTube</span></a>
       </li>
     </ul>
     <p class="footer__copyright copyright">
@@ -132,16 +132,18 @@
   </div>
 </footer>
 
-<section class="popup popup--error popup--hidden">
+<section class="popup popup--failure !popup--hidden">
   <h2>Что-то пошло не так!</h2>
   <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
   <button class="popup__ok-button button">Ok</button>
 </section>
 
-<section class="popup popup--ok popup--hidden">
+<section class="popup popup--success !popup--hidden">
   <h2>Ваш отзыв отправлен!</h2>
-  <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-  <button class="popup__close-button button">Закрыть окно</button>
+  <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+  <div class="popup__close-button-wrapper">
+    <button class="popup__close-button button">Закрыть окно</button>
+  </div>
 </section>
 
 </body>

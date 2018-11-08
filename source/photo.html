@@ -7,12 +7,12 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<body>
+<body id="photo">
 
 <header class="header">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="main-nav__menu menu">
         <li class="menu__item">
           <a class="menu__link" href="index.html">Главная</a>
@@ -29,7 +29,7 @@
       </ul>
     </div>
     <div class="main-nav__menu-bar">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <a class="header__logo">
       <img class="header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83">
@@ -42,13 +42,13 @@
 
 <main class="main">
 
-  <header class="main__header main__header--photo">
+  <div class="main__header main__header--photo">
     <h1 class="main__title">Фото и видео</h1>
     <p class="main__preface">
       Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
       экономике.
     </p>
-  </header>
+  </div>
 
   <section class="main__photos photos">
     <h2 class="visually-hidden">Фото</h2>
@@ -122,13 +122,13 @@
     <p class="footer__hashtag">#visitsedona</p>
     <ul class="footer__social social">
       <li class="social__item">
-        <a href="#" class="social__link social__link--twitter">Twitter</a>
+        <a href="#" class="social__link social__link--twitter"><span class="visually-hidden">Twitter</span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--facebook">Facebook</a>
+        <a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Facebook</span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--youtube">YouTube</a>
+        <a href="#" class="social__link social__link--youtube"><span class="visually-hidden">YouTube</span></a>
       </li>
     </ul>
     <p class="footer__copyright copyright">

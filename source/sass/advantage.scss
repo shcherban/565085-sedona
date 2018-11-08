@@ -2,6 +2,7 @@
   box-sizing: border-box;
   min-height: 168px;
   margin: 0 auto;
+  //padding-top: 26px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -10,7 +11,7 @@
 }
 
 .advantage__title {
-  margin-top: 26px;
+  //margin-top: 26px;
   margin-bottom: 0;
   font-weight: bold;
   font-size: 18px;
@@ -29,7 +30,7 @@
     font-size: 21px;
 
     br {
-      display: inline;
+      display: initial;
     }
   }
 }
@@ -62,7 +63,7 @@
     margin-top: 20px;
 
     br {
-      display: inline;
+      display: initial;
     }
   }
 
@@ -163,7 +164,7 @@
       margin-top: 21px;
 
       br {
-        display: inline;
+        display: initial;
       }
     }
   }

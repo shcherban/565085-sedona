@@ -1,9 +1,10 @@
 .feature-list {
   box-sizing: border-box;
   width: $mobile-width;
-  min-height: 415px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 7px;
+  padding-bottom: 36px;
   list-style: none;
   background-color: $white-bgcolor;
   border: 1px solid $white-bgcolor;
@@ -18,14 +19,18 @@
 
 .feature-list__item {
   box-sizing: border-box;
+  padding-left: 68px;
   border: 1px solid $white-bgcolor;
 
   @media (min-width: $tablet-width) {
     width: 33%;
+    padding: 0;
   }
 }
 
 .feature-list__title {
+  margin-top: 26px;
+  margin-bottom: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -38,12 +43,50 @@
 }
 
 .feature-list__text {
+  width: 220px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 21px;
   color: $dark-gray-txtcolor;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+  }
+}
+
+.feature-list__item--accommodation {
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 37px auto;
+  background-position: 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 75px auto;
+    background-position: 50% 53px;
+  }
+}
+
+.feature-list__item--souvenirs {
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 32px auto;
+  background-position: 23px 14px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 64px auto;
+    background-position: 50% 50px;
+  }
+}
+
+.feature-list__item--food {
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: 16px 19px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 77px auto;
+    background-position: 50% 56px;
   }
 }
 
