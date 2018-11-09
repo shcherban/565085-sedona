@@ -9,12 +9,15 @@
 }
 
 .main__header {
-  box-sizing: border-box;
-  min-height: 202px;
   padding-top: 39px;
+  padding-bottom: 5px;
   position: relative;
   background-color: $white-bgcolor;
-  //border-top: 1px solid $white-bgcolor;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .main__header::before {
@@ -58,7 +61,6 @@
 .main__title {
   width: 280px;
   margin: 0 auto;
-  //margin-top: 38px;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -67,7 +69,6 @@
 
   @media (min-width: $tablet-width) {
     width: 455px;
-    margin-top: 49px;
     font-size: 21px;
 
     br {

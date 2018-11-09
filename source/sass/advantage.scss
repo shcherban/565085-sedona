@@ -1,8 +1,8 @@
 .advantage {
-  box-sizing: border-box;
-  min-height: 168px;
+  // box-sizing: border-box;
+  // min-height: 168px;
   margin: 0 auto;
-  //padding-top: 26px;
+  // padding-top: 26px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,8 @@
 
 .advantage__title {
   //margin-top: 26px;
-  margin-bottom: 0;
+  // margin-bottom: 0;
+  margin: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -37,13 +38,14 @@
 
 .advantage__number,
 .advantage__text {
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: $dark-gray-txtcolor;
 }
 
 .advantage__number {
-  margin-top: 10px;
+  // margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     margin-top: 11px;
@@ -96,10 +98,10 @@
   width: 100%;
 
   .advantage__description {
-    box-sizing: border-box;
-    min-height: 191px;
+    // box-sizing: border-box;
+    // min-height: 191px;
     background-color: $sky-blue;
-    border: 1px solid $sky-blue;
+    // border: 1px solid $sky-blue;
     order: 1;
   }
 
@@ -110,12 +112,12 @@
   }
 
   .advantage__title {
-    margin-top: 38px;
-    margin-bottom: 0;
+    // margin-top: 38px;
+    // margin-bottom: 0;
   }
 
   .advantage__number {
-    margin-top: 9px;
+    // margin-top: 9px;
   }
 
   .advantage__text {
