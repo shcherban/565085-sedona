@@ -4,13 +4,14 @@
   margin: 0 auto;
   padding: 0;
   padding-top: 7px;
-  padding-bottom: 36px;
+  padding-bottom: 37px;
   list-style: none;
   background-color: $white-bgcolor;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     min-height: 330px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -18,16 +19,18 @@
 
 .feature-list__item {
   padding-left: 68px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
-    width: 33%;
-    padding: 0;
+    width: 33.3%;
+    padding-left: 0;
+    padding-top: 158px;
   }
 }
 
 .feature-list__title {
   margin: 0;
-  padding-top: 28px;
+  //padding-top: 28px;
   margin-bottom: 14px;
   font-weight: bold;
   font-size: 18px;
@@ -35,6 +38,7 @@
   color: $black-txtcolor;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
     text-align: center;
     font-size: 21px;
   }
@@ -47,8 +51,22 @@
   line-height: 21px;
   color: $dark-gray-txtcolor;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 165px;
+    margin: 0 auto;
     text-align: center;
+
+    br {
+      display: initial;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
   }
 }
 
@@ -56,11 +74,11 @@
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-size: 37px auto;
-  background-position: 20px 17px;
+  background-position: 22px 20px;
 
   @media (min-width: $tablet-width) {
     background-size: 75px auto;
-    background-position: 50% 53px;
+    background-position: 50% 60px;
   }
 }
 
@@ -68,11 +86,11 @@
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: 32px auto;
-  background-position: 23px 14px;
+  background-position: 25px 16px;
 
   @media (min-width: $tablet-width) {
     background-size: 64px auto;
-    background-position: 50% 50px;
+    background-position: 50% 56px;
   }
 }
 
@@ -80,11 +98,11 @@
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: 40px auto;
-  background-position: 16px 19px;
+  background-position: 18px 22px;
 
   @media (min-width: $tablet-width) {
     background-size: 77px auto;
-    background-position: 50% 56px;
+    background-position: 50% 62px;
   }
 }
 

@@ -54,12 +54,18 @@
     <fieldset class="form__fieldset form__fieldset--personal-data">
       <legend class="form__legend">Представьтесь:</legend>
       <div class="form__fieldset-wrapper">
-        <label class="form__light-label" for="first-name">Имя*:</label>
-        <input class="form__input form__input--text" id="first-name" name="first-name" type="text" placeholder="Петр">
-        <label class="form__light-label" for="second-name">Фамилия*:</label>
-        <input class="form__input form__input--text" id="second-name" name="second-name" type="text" placeholder="Иванов">
-        <label class="form__light-label" for="middle-name">Отчество:</label>
-        <input class="form__input form__input--text" id="middle-name" name="middle-name" type="text" placeholder="Александрович">
+        <div class="form__field-wrapper">
+          <label class="form__light-label" for="first-name">Имя*:</label>
+          <input class="form__input form__input--text" id="first-name" name="first-name" type="text" placeholder="Петр">
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__light-label" for="second-name">Фамилия*:</label>
+          <input class="form__input form__input--text" id="second-name" name="second-name" type="text" placeholder="Иванов">
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__light-label" for="middle-name">Отчество:</label>
+          <input class="form__input form__input--text" id="middle-name" name="middle-name" type="text" placeholder="Александрович">
+        </div>
       </div>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--contacts">
@@ -126,19 +132,19 @@
     <p class="footer__copyright copyright">
       <span>Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <img class="copyright__logo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+        <span class="visually-hidden">HTML Academy</span>
       </a>
     </p>
   </div>
 </footer>
 
-<section class="popup popup--failure !popup--hidden">
+<section class="popup popup--failure popup--hidden">
   <h2>Что-то пошло не так!</h2>
   <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
   <button class="popup__ok-button button">Ok</button>
 </section>
 
-<section class="popup popup--success !popup--hidden">
+<section class="popup popup--success popup--hidden">
   <h2>Ваш отзыв отправлен!</h2>
   <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
   <div class="popup__close-button-wrapper">

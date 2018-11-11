@@ -36,9 +36,11 @@
 }
 
 .form__fieldset {
-  box-sizing: border-box;
+  //box-sizing: border-box;
   margin: 0;
   padding: 20px;
+  border: none;
+  border-top: 1px solid $dark-gray-border-color;
 }
 
 .form__fieldset--personal-data {
@@ -148,4 +150,19 @@
     font-size: 14px;
     line-height: 26px;
   }
+}
+
+.form__input {
+  //max-width: 230px - 2 * 16px;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: bold;
+  border: none;
+  background-color: $base-bgcolor;
+}
+
+.form__field-wrapper {
+  width: 280px;
+  display: flex;
 }
