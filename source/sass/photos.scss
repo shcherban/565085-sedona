@@ -1,9 +1,10 @@
 .photos__wrapper {
+  //width: 280px;
+
   @media (min-width: $tablet-width) {
-    // box-sizing: border-box;
+     //box-sizing: border-box;
     width: 648px;
     margin: 0 auto;
-
     display: flex;
     flex-wrap: wrap;
 

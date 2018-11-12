@@ -93,7 +93,6 @@
 }
 
 .main__header--photo {
-  // min-height: 189px;
   padding-top: 37px;
   padding-bottom: 25px;
 
@@ -102,17 +101,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    //min-height: 249px;
+    padding-top: 74px;
+    padding-bottom: 70px;
 
     .main__title {
-      //margin-top: 73px;
+      margin-bottom: 30px;
 
-      font-size: 30px;
+      font-size: 32px;
     }
 
     .main__preface {
       width: 440px;
-      //margin-top: 30px;
 
       line-height: 24px;
     }

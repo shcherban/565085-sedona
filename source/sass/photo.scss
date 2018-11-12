@@ -1,9 +1,10 @@
 .photo {
   display: block;
-  // box-sizing: border-box;
+   //box-sizing: border-box;
   width: 280px;
   // min-height: 414px;
   margin: 0 auto;
+  //padding: 0;
   padding-top: 22px;
   padding-bottom: 17px;
 
@@ -14,15 +15,21 @@
   border-top: 1px solid $dark-gray-border-color;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
-    // min-height: 347px;
+    width: 50%;
+    //min-height: ;
     margin: 0;
+    padding: 0;
 
     border: none;
 
     &:first-child {
       width: 648px;
-      // min-height: 480px;
+      min-height: 478px;
+    }
+
+    &__image {
+      width: 648px;
+      height: 400px;
     }
 
     &__info {
