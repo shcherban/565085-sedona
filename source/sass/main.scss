@@ -93,15 +93,11 @@
 }
 
 .main__header--photo {
-  min-height: 189px;
-
-  .main__title {
-    //margin-top: 36px;
-  }
+  // min-height: 189px;
+  padding-top: 37px;
+  padding-bottom: 25px;
 
   .main__preface {
-    //margin-top: 25px;
-
     line-height: 24px;
   }
 
@@ -173,8 +169,4 @@
 .main__header--form::after,
 .main__header--photo::after {
   display: none;
-}
-
-.main__header--photo {
-  padding-bottom: 15px;
 }

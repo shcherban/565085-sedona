@@ -1,8 +1,56 @@
+.player {
+  width: $mobile-width;
+  // height: 267px;
+  padding-top: 156px;
+  // position: relative;
+
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+}
+
+.player__control-panel {
+  width: 235px;
+  margin: 0 auto;
+  padding-left: 22px;
+  padding-right: 23px;
+  // margin-bottom: 0;
+  // margin-top: 30px;
+}
+
 .player__volume {
   height: 45px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .player__buttons {
+  height: 66px;
+  display: flex;
+  align-items: center;
   background-color: #f2f2f2;
+}
+
+.player__button {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+}
+
+.player__replay {
+  background-image: url("../img/icon-video-replay.svg");
+}
+
+.player__subtitles {
+  background-image: url("../img/icon-video-subtitles.svg");
+}
+
+.player__fullscreen {
+  background-image: url("../img/icon-video-fullscreen.svg");
 }

@@ -1,12 +1,13 @@
 .video {
-  box-sizing: border-box;
-  min-height: 459px;
+  // box-sizing: border-box;
+  // min-height: 459px;
+  padding-top: 35px;
   text-align: center;
-  border: 1px solid $white-bgcolor;
+  // border: 1px solid $white-bgcolor;
 
   b {
+    margin-bottom: 25px;
     display: block;
-    margin-top: 37px;
     font-size: 18px;
     line-height: 26px;
     color: $black-txtcolor;
@@ -15,7 +16,8 @@
   p {
     width: 240px;
     margin: 0 auto;
-    margin-top: 30px;
+    // margin-top: 30px;
+    margin-bottom: 35px;
 
     font-size: 14px;
     line-height: 24px;
@@ -45,17 +47,5 @@
 }
 
 .video__player {
-  width: $mobile-width;
-  height: 267px;
   margin: 0 auto;
-  margin-top: 30px;
-
-  background-image: url("../img/video-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-  @media (min-width: $tablet-width) {
-    width: 648px;
-    height: 500px;
-  }
 }
