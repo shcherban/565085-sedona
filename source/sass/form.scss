@@ -165,4 +165,6 @@
 .form__field-wrapper {
   width: 280px;
   display: flex;
+  flex-basis: 10px;
+  justify-content: space-between;
 }
