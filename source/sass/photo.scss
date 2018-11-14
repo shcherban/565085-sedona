@@ -19,15 +19,19 @@
 
     border: none;
 
+    &__image {
+      // margin: 0;
+      width: 100%;
+      height: 267px;
+    }
+
     &:first-child {
       width: 648px;
       min-height: 478px;
-    }
 
-    &__image {
-      margin: 0;
-      width: 648px;
-      height: 400px;
+      .photo__image {
+        height: 400px;
+      }
     }
 
     &__info {
@@ -65,10 +69,13 @@
   border-bottom: 1px solid $dark-gray-border-color;
 }
 
+.photo__info {
+  padding-top: 15px;
+}
+
 .photo__image {
   display: block;
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .photo__legend {
