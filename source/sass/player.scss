@@ -102,4 +102,13 @@
       background-color: rgba(0, 0, 0, 0.6);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    background-size: 800px 500px;
+
+    &__volume {
+      width: 540px;
+    }
+  }
 }

@@ -22,8 +22,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    ////min-height: 744px;
-    //background-color: red;
     padding-top: 65px;
     padding-bottom: 10px;
 
@@ -39,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 746px;
+    padding-top: 40px;
 
     b {
       margin-top: 33px;

@@ -118,11 +118,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 287px;
-
-    .main__title {
-      //margin-top: 109px;
-    }
+    padding-top: 110px;
   }
 }
 
@@ -130,20 +126,17 @@
   padding-top: 37px;
   padding-bottom: 15px;
 
-  .main__title {
-    //margin-bottom: 30px;
-  }
-
   .main__preface {
     width: 320px;
-    //margin-top: 25px;
 
     line-height: 24px;
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 74px;
+
     .main__title {
-      //margin-top: 73px;
+      margin-bottom: 31px;
 
       font-size: 30px;
       line-height: 26px;
@@ -151,7 +144,6 @@
 
     .main__preface {
       width: 440px;
-      //margin-top: 31px;
 
       font-size: 14px;
       line-height: 24px;
@@ -159,9 +151,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    .main__title {
-      //margin-top: 109px;
-    }
+    padding-top: 110px;
   }
 }
 
