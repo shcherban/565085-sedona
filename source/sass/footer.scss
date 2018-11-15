@@ -8,28 +8,23 @@
 }
 
 .footer__wrapper {
-  //box-sizing: border-box;
-  //min-height: 233px;
   margin: 0 auto;
   padding-top: 32px;
   padding-bottom: 12px;
-  //margin-top: 10px;
-  //background-color: red;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    //width: 648px;
     width: 662px;
     min-height: 120px;
     padding: 0;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    //width: 960px;
     width: 974px;
   }
 }
@@ -54,7 +49,6 @@
 
   @media (min-width: $tablet-width) {
     margin: initial;
-    //margin-top: -5px;
   }
 }
 
