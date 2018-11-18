@@ -12,6 +12,13 @@
 
 .main-nav__toggle--open {
   display: none;
+  border: none;
+  background: url("../img/icon-menu.svg") no-repeat;
+}
+
+.main-nav__toggle--close {
+  border: none;
+  background: url("../img/icon-cross.svg") no-repeat;
 }
 
 .main-nav__menu-bar {
@@ -45,14 +52,4 @@
       display: flex;
     }
   }
-}
-
-.main-nav__toggle--open {
-  border: none;
-  background: url("../img/icon-menu.svg") no-repeat;
-}
-
-.main-nav__toggle--close {
-  border: none;
-  background: url("../img/icon-cross.svg") no-repeat;
 }

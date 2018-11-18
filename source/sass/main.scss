@@ -124,7 +124,7 @@
 
 .main__header--form {
   padding-top: 37px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 
   .main__preface {
     width: 320px;
@@ -134,6 +134,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 74px;
+    padding-bottom: 74px;
 
     .main__title {
       margin-bottom: 31px;
@@ -152,6 +153,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 110px;
+    padding-bottom: 59px;
   }
 }
 
