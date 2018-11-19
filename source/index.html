@@ -12,7 +12,7 @@
 <header class="header">
   <nav class="main-nav !main-nav--menu-closed">
     <div class="man-nav__wrapper">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="main-nav__menu menu">
         <li class="menu__item">
           <a class="menu__link menu__link--active">Главная</a>
@@ -29,7 +29,7 @@
       </ul>
     </div>
     <div class="main-nav__menu-bar">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <a class="header__logo">
       <img class="header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83">
@@ -43,12 +43,12 @@
 
 <main class="main">
 
-  <header class="main__header">
+  <div class="main__header">
     <h1 class="main__title">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!</h1>
     <p class="main__preface">
       Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
     </p>
-  </header>
+  </div>
 
   <section class="advantages">
     <h2 class="visually-hidden">Преимущества</h2>
@@ -71,13 +71,13 @@
         <li class="feature-list__item feature-list__item--souvenirs">
           <h3 class="feature-list__title">Сувениры</h3>
           <p class="feature-list__text">
-            Не только китайского, но и местного производства!
+            Не только китайского,<br> но и местного производства!
           </p>
         </li>
         <li class="feature-list__item feature-list__item--food">
           <h3 class="feature-list__title">Еда</h3>
           <p class="feature-list__text">
-            Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!
           </p>
         </li>
       </ul>
@@ -91,19 +91,25 @@
       </div>
       <ul class="advantage-list">
         <li class="advantage-list__item advantage">
-          <h3 class="advantage__title">Небольшая площадь</h3>
-          <p class="advantage__number">— №3 —</p>
-          <p class="advantage__text">Все интересные места находятся очень близко</p>
+          <!--<div class="advantage__description">-->
+            <h3 class="advantage__title">Небольшая площадь</h3>
+            <p class="advantage__number">— №3 —</p>
+            <p class="advantage__text">Все интересные места находятся очень близко</p>
+          <!--</div>-->
         </li>
         <li class="advantage-list__item advantage">
-          <h3 class="advantage__title">Красивая дорога</h3>
-          <p class="advantage__number">— №4 —</p>
-          <p class="advantage__text">Ехать в Седону из<br> Лас-Вегаса совсем<br> не скучно!</p>
+          <!--<div class="advantage__description">-->
+            <h3 class="advantage__title">Красивая дорога</h3>
+            <p class="advantage__number">— №4 —</p>
+            <p class="advantage__text">Ехать в Седону из<br> Лас-Вегаса совсем<br> не скучно!</p>
+          <!--</div>-->
         </li>
         <li class="advantage-list__item advantage">
-          <h3 class="advantage__title">Мало туристов</h3>
-          <p class="advantage__number">— №5 —</p>
-          <p class="advantage__text">Большинство едет в Гранд Каньон и толпится там</p>
+          <!--<div class="advantage__description">-->
+            <h3 class="advantage__title">Мало туристов</h3>
+            <p class="advantage__number">— №5 —</p>
+            <p class="advantage__text">Большинство едет в Гранд Каньон и толпится там</p>
+          <!--</div>-->
         </li>
       </ul>
     </div>
@@ -127,19 +133,19 @@
     <p class="footer__hashtag">#visitsedona</p>
     <ul class="footer__social social">
       <li class="social__item">
-        <a href="#" class="social__link social__link--twitter">Twitter</a>
+        <a href="#" class="social__link social__link--twitter"><span class="visually-hidden">Twitter</span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--facebook">Facebook</a>
+        <a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Facebook</span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--youtube">YouTube</a>
+        <a href="#" class="social__link social__link--youtube"><span class="visually-hidden">YouTube</span></a>
       </li>
     </ul>
     <p class="footer__copyright copyright">
       <span>Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <img class="copyright__logo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+        <span class="visually-hidden">HTML Academy</span>
       </a>
     </p>
   </div>

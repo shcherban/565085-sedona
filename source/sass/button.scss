@@ -1,8 +1,8 @@
 .button {
   display: block;
   box-sizing: border-box;
-  min-height: 58px;
   padding-top: 16px;
+  padding-bottom: 16px;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -11,4 +11,5 @@
   line-height: 26px;
   color: $white-txtcolor;
   background-color: $sky-blue;
+  border: none;
 }

@@ -1,4 +1,6 @@
 .advantages__wrapper {
+  padding: 0;
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     margin: 0 auto;

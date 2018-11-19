@@ -13,5 +13,22 @@
 }
 
 .advantage-list__item {
-  border: 1px solid $light-gray-bgcolor;
+  width: 280px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid $dark-gray-border-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.advantage-list__item:last-child {
+  border-bottom: none;
 }

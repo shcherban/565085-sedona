@@ -12,7 +12,7 @@
 <header class="header">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="main-nav__menu menu">
         <li class="menu__item">
           <a class="menu__link" href="index.html">Главная</a>
@@ -29,7 +29,7 @@
       </ul>
     </div>
     <div class="main-nav__menu-bar">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <a class="header__logo">
       <img class="header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83">
@@ -42,61 +42,83 @@
 
 <main class="main">
 
-  <header class="main__header main__header--form">
+  <div class="main__header main__header--form">
     <h1 class="main__title">Оставьте свой отзыв</h1>
     <p class="main__preface">
       Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
       достопримечательностях
     </p>
-  </header>
+  </div>
 
   <form class="main__form form" action="https://echo.htmlacademy.ru">
     <fieldset class="form__fieldset form__fieldset--personal-data">
-      <legend class="form__legend">Представьтесь:</legend>
+      <h3 class="form__legend">Представьтесь:</h3>
       <div class="form__fieldset-wrapper">
-        <label class="form__light-label" for="first-name">Имя*:</label>
-        <input class="form__input form__input--text" id="first-name" name="first-name" type="text" placeholder="Петр">
-        <label class="form__light-label" for="second-name">Фамилия*:</label>
-        <input class="form__input form__input--text" id="second-name" name="second-name" type="text" placeholder="Иванов">
-        <label class="form__light-label" for="middle-name">Отчество:</label>
-        <input class="form__input form__input--text" id="middle-name" name="middle-name" type="text" placeholder="Александрович">
+        <div class="form__field-wrapper">
+          <label class="form__light-label" for="first-name">Имя*:</label>
+          <input class="form__input form__input--text" id="first-name" name="first-name" type="text" placeholder="Петр">
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__light-label" for="second-name">Фамилия*:</label>
+          <input class="form__input form__input--text" id="second-name" name="second-name" type="text" placeholder="Иванов">
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__light-label" for="middle-name">Отчество:</label>
+          <input class="form__input form__input--text" id="middle-name" name="middle-name" type="text" placeholder="Александрович">
+        </div>
       </div>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--contacts">
-      <legend class="form__legend">Контактная информация:</legend>
+      <h3 class="form__legend">Контактная информация:</h3>
       <div class="form__fieldset-wrapper">
-        <label class="form__light-label" for="tel">Контактный телефон*:</label>
-        <input class="form__input form__input--tel" id="tel" name="tel" type="tel" placeholder="Введите телефон">
-        <label class="form__light-label" for="email">Электронная почта*:</label>
-        <input class="form__input form__input--email" id="email" name="email" type="email" placeholder="Введите e-mail">
+        <div class="form__label-field-wrapper-wrapper">
+          <label class="form__light-label" for="tel"><span>Контактный</span> телефон*:</label>
+          <div class="form__field-wrapper form__field-wrapper--tel">
+            <input class="form__input form__input--tel" id="tel" name="tel" type="tel" placeholder="Введите телефон">
+          </div>
+        </div>
+        <div class="form__label-field-wrapper-wrapper">
+          <label class="form__light-label" for="email">Электронная почта*:</label>
+          <div class="form__field-wrapper form__field-wrapper--email">
+            <input class="form__input form__input--email" id="email" name="email" type="email" placeholder="Введите e-mail">
+          </div>
+        </div>
       </div>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--impression">
-      <legend class="form__legend">Ваше общее впечатление:</legend>
+      <h3 class="form__legend">Ваше общее впечатление:</h3>
       <div class="form__fieldset-wrapper">
-        <input class="form__input form__input--radio form__input__radio--checked" id="positive" name="impression" type="radio" value="positive" checked>
+        <input class="form__input form__input--radio visually-hidden form__input--radio-checked" id="positive" name="impression" type="radio" value="positive" checked>
         <label class="form__strong-label" for="positive">Скорее положительное</label>
-        <input class="form__input form__input--radio" id="negative" name="impression" type="radio" value="negative">
+        <input class="form__input form__input--radio visually-hidden" id="negative" name="impression" type="radio" value="negative">
         <label class="form__strong-label" for="negative">Скорее отрицательное</label>
-        <input class="form__input form__input--radio" id="noanswer" name="impression" type="radio" value="noanswer">
+        <input class="form__input form__input--radio visually-hidden" id="noanswer" name="impression" type="radio" value="noanswer">
         <label class="form__strong-label" for="noanswer">Затрудняюсь ответить</label>
       </div>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--visited-sights">
-      <legend class="form__legend">Посещенные достопримечательности:</legend>
+      <h3 class="form__legend">Посещенные<br> достопримечательности:</h3>
       <div class="form__fieldset-wrapper">
-        <input class="form__input form__input--checkbox form__input__checkbox--checked" id="devilsbridge" name="sight" type="checkbox" value="devilsbridge" checked>
-        <label class="form__strong-label" for="devilsbridge">Мост Дьявола</label>
-        <input class="form__input form__input--checkbox form__input__checkbox--checked" id="bellmountain" name="sight" type="checkbox" value="bellmountain" checked>
-        <label class="form__strong-label" for="bellmountain">Гора-Колокол</label>
-        <input class="form__input form__input--checkbox form__input__checkbox--checked" id="slidepark" name="sight" type="checkbox" value="slidepark" checked>
-        <label class="form__strong-label" for="slidepark">Слайд-парк</label>
-        <input class="form__input form__input--checkbox" id="redrocks" name="sight" type="checkbox" value="redrocks">
-        <label class="form__strong-label" for="redrocks">Красные скалы</label>
+        <div class="form__input-label-wrapper">
+          <input class="form__input form__input--checkbox visually-hidden form__input--checkbox-checked" id="devilsbridge" name="sight" type="checkbox" value="devilsbridge" checked>
+          <label class="form__strong-label" for="devilsbridge">Мост Дьявола</label>
+        </div>
+        <div class="form__input-label-wrapper">
+          <input class="form__input form__input--checkbox visually-hidden form__input--checkbox-checked" id="bellmountain" name="sight" type="checkbox" value="bellmountain" checked>
+          <label class="form__strong-label" for="bellmountain">Гора-Колокол</label>
+        </div>
+        <div class="form__input-label-wrapper">
+          <input class="form__input form__input--checkbox visually-hidden form__input--checkbox-checked" id="slidepark" name="sight" type="checkbox" value="slidepark" checked>
+          <label class="form__strong-label" for="slidepark">Слайд-парк</label>
+        </div>
+        <div class="form__input-label-wrapper">
+          <input class="form__input form__input--checkbox visually-hidden" id="redrocks" name="sight" type="checkbox" value="redrocks">
+          <label class="form__strong-label" for="redrocks">Красные скалы</label>
+        </div>
       </div>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--emotions">
-      <legend class="form__legend">Опишите свои эмоции:</legend>
+      <h3 class="form__legend">Опишите свои эмоции:</h3>
       <textarea class="form__input form__input--textarea">Опишите подробно все свои восторги</textarea>
     </fieldset>
     <div class="form__footer">
@@ -114,34 +136,36 @@
     <p class="footer__hashtag">#visitsedona</p>
     <ul class="footer__social social">
       <li class="social__item">
-        <a href="#" class="social__link social__link--twitter">Twitter</a>
+        <a href="#" class="social__link social__link--twitter"><span class="visually-hidden">Twitter</span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--facebook">Facebook</a>
+        <a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Facebook</span></a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--youtube">YouTube</a>
+        <a href="#" class="social__link social__link--youtube"><span class="visually-hidden">YouTube</span></a>
       </li>
     </ul>
     <p class="footer__copyright copyright">
       <span>Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-        <img class="copyright__logo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+        <span class="visually-hidden">HTML Academy</span>
       </a>
     </p>
   </div>
 </footer>
 
-<section class="popup popup--error popup--hidden">
+<section class="popup popup--failure popup--hidden">
   <h2>Что-то пошло не так!</h2>
   <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
   <button class="popup__ok-button button">Ok</button>
 </section>
 
-<section class="popup popup--ok popup--hidden">
+<section class="popup popup--success popup--hidden">
   <h2>Ваш отзыв отправлен!</h2>
-  <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-  <button class="popup__close-button button">Закрыть окно</button>
+  <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+  <div class="popup__close-button-wrapper">
+    <button class="popup__close-button button">Закрыть окно</button>
+  </div>
 </section>
 
 </body>
