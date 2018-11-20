@@ -17,7 +17,18 @@
   @media (min-width: $tablet-width) {
     top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 188px / 2);
+
+    .header__logo-image {
+      width: 188px;
+      height: 96px;
+    }
+  }
 }
+
+
 
 .header__banner {
   box-sizing: border-box;
