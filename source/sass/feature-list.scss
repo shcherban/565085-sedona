@@ -8,11 +8,15 @@
   background-color: $white-bgcolor;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: $tablet-width;
     min-height: 330px;
     padding: 0;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 

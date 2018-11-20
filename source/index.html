@@ -34,7 +34,7 @@
     <a class="header__logo">
       <picture>
         <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
         <img class="header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83">
       </picture>
     </a>
@@ -63,7 +63,11 @@
           <p class="advantage__number">— №1 —</p>
           <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="advantage__image" src="img/main-city-mobile@1x.jpg" alt="городок" width="320" height="260">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+          <img class="advantage__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="городок" width="320" height="260">
+        </picture>
       </div>
       <ul class="feature-list">
         <li class="feature-list__item feature-list__item--accommodation">
@@ -91,29 +95,27 @@
           <p class="advantage__number">— №2 —</p>
           <p class="advantage__text">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
         </div>
-        <img class="advantage__image" src="img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола" width="320" height="260">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+          <img class="advantage__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола" width="320" height="260">
+        </picture>
       </div>
       <ul class="advantage-list">
         <li class="advantage-list__item advantage">
-          <!--<div class="advantage__description">-->
-            <h3 class="advantage__title">Небольшая площадь</h3>
-            <p class="advantage__number">— №3 —</p>
-            <p class="advantage__text">Все интересные места находятся очень близко</p>
-          <!--</div>-->
+          <h3 class="advantage__title">Небольшая площадь</h3>
+          <p class="advantage__number">— №3 —</p>
+          <p class="advantage__text">Все интересные места находятся очень близко</p>
         </li>
         <li class="advantage-list__item advantage">
-          <!--<div class="advantage__description">-->
-            <h3 class="advantage__title">Красивая дорога</h3>
-            <p class="advantage__number">— №4 —</p>
-            <p class="advantage__text">Ехать в Седону из<br> Лас-Вегаса совсем<br> не скучно!</p>
-          <!--</div>-->
+          <h3 class="advantage__title">Красивая дорога</h3>
+          <p class="advantage__number">— №4 —</p>
+          <p class="advantage__text">Ехать в Седону из<br> Лас-Вегаса совсем<br> не скучно!</p>
         </li>
         <li class="advantage-list__item advantage">
-          <!--<div class="advantage__description">-->
-            <h3 class="advantage__title">Мало туристов</h3>
-            <p class="advantage__number">— №5 —</p>
-            <p class="advantage__text">Большинство едет в Гранд Каньон и толпится там</p>
-          <!--</div>-->
+          <h3 class="advantage__title">Мало туристов</h3>
+          <p class="advantage__number">— №5 —</p>
+          <p class="advantage__text">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
     </div>
@@ -128,7 +130,13 @@
     <a class="feedback__link button" href="#">Найти гостиницу</a>
   </section>
 
-  <iframe class="map" src="img/bg-map-mobile@1x.jpg"></iframe>
+  <div class="map">
+    <picture>
+      <source media="(min-width:1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+      <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+      <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта местности" width="320" height="350">
+    </picture>
+  </div>
 
 </main>
 
