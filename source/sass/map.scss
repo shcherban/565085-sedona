@@ -1,11 +1,19 @@
 .map {
-  width: 100%;
-  height: 350px;
+  width: $mobile-width;
+  margin: 0 auto;
   padding-bottom: 0;
   border: 0;
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    margin: 0 auto;
   }
 }

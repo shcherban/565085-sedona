@@ -74,9 +74,14 @@
 }
 
 .advantage__image {
-  height: 260px;
+  width: $mobile-width;
+  height: auto;
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .advantage--colorful:first-child {
@@ -127,19 +132,20 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 256px;
+    overflow: hidden;
+
     display: flex;
+    align-items: center;
 
     .advantage__description {
+      box-sizing: border-box;
+      height: 256px;
       padding-top: 44px;
     }
 
     .advantage__text {
       width: 170px;
-    }
-
-    .advantage__image {
-      flex-grow: 1;
-      height: 256px;
     }
   }
 
