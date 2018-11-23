@@ -17,8 +17,12 @@
   width: 60px;
   height: 60px;
   margin-left: 5px;
-  background-image: url("../img/htmlacademy.svg");
+  padding-top: 18px;
   background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.copyright__link-image path {
+  fill: $black-txtcolor;
 }

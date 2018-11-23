@@ -13,14 +13,26 @@
 }
 
 .social__link--twitter {
-  background: $sky-blue url("../img/icon-twitter.svg") 50% 50% no-repeat;
+  background: $sky-blue;
 }
 
 .social__link--facebook {
   width: 47px;
-  background: $sky-blue url("../img/icon-facebook.svg") 50% 50% no-repeat;
+  background: $sky-blue;
 }
 
 .social__link--youtube {
-  background: $sky-blue url("../img/icon-youtube.svg") 50% 50% no-repeat;
+  background: $sky-blue;
+}
+
+.social__link svg {
+  margin-top: 17px;
+
+  path {
+    fill: $white-txtcolor;
+  }
+}
+
+.social__link--facebook svg {
+  margin-top: 14px;
 }
