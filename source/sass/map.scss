@@ -2,6 +2,7 @@
   width: $mobile-width;
   margin: 0 auto;
   padding-bottom: 0;
+  position: relative;
   border: 0;
 
   img {
@@ -15,5 +16,19 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  top: calc(50% - 16px);
+  left: calc(50% - 14px);
+
+  @media (min-width: $tablet-width) {
+    top: calc(50% - 13px);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: calc(50% - 15px);
   }
 }

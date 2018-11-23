@@ -12,6 +12,11 @@
   font-weight: bold;
 }
 
+@mixin background-shadow() {
+  width: $desktop-width;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
 body {
   min-width: $mobile-width;
   padding: 0;

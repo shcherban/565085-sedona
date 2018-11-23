@@ -5,6 +5,8 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+
+    @include background-shadow();
   }
 }
 
@@ -94,7 +96,7 @@
 
 .main__header--photo {
   padding-top: 37px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 
   .main__preface {
     line-height: 24px;
@@ -107,7 +109,7 @@
     .main__title {
       margin-bottom: 30px;
 
-      font-size: 32px;
+      font-size: 30px;
     }
 
     .main__preface {
@@ -119,6 +121,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 110px;
+    padding-bottom: 72px;
   }
 }
 

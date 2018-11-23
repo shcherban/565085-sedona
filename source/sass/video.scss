@@ -1,10 +1,10 @@
 .video {
-  padding-top: 35px;
+  padding-top: 32px;
   padding-bottom: 43px;
   text-align: center;
 
   b {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     display: block;
     font-size: 18px;
     line-height: 26px;
@@ -37,11 +37,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
+    padding-top: 70px;
     padding-bottom: 87px;
 
     b {
-      margin-top: 33px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 71px;
     }
   }
 }

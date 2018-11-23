@@ -46,7 +46,7 @@ gulp.task("copy", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -57,5 +57,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
 gulp.task("build", gulp.series("clean", "css", "copy"));
+gulp.task("start", gulp.series("build", "server"));

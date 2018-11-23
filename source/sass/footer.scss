@@ -4,6 +4,8 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+
+    @include background-shadow();
   }
 }
 
@@ -16,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     width: 662px;
-    padding-top: 28px;
+    padding-top: 27px;
     padding-bottom: 36px;
     display: flex;
     justify-content: space-between;
@@ -25,7 +27,7 @@
 
   @media (min-width: $desktop-width) {
     width: 974px;
-    padding-top: 25px;
+    padding-top: 27px;
   }
 }
 

@@ -165,3 +165,11 @@
     }
   }
 }
+
+.advantage--bridge {
+  .advantage__image {
+    @media (min-width: $desktop-width) {
+      margin-top: -8px;
+    }
+  }
+}
