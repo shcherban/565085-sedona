@@ -1,0 +1,24 @@
+@mixin legend-center() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 125px;
+    height: 2px;
+    background-color: $dark-gray-border-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+}
