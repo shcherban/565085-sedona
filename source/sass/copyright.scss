@@ -13,14 +13,10 @@
   color: $black-txtcolor;
 }
 
-.copyright__link {
-  width: 60px;
-  height: 60px;
+.copyright__link-image {
+  width: 40px;
+  height: auto;
   margin-left: 5px;
-  padding-top: 18px;
-  background-size: 40px auto;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .copyright__link-image path {

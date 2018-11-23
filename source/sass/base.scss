@@ -22,6 +22,8 @@ body {
 }
 
 .background {
+  background-color: $white-bgcolor;
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     margin: 0 auto;

@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet-width) {
     width: 662px;
-    padding-top: 18px;
+    padding-top: 35px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -37,17 +37,17 @@
   color: $black-txtcolor;
 
   @media (min-width: $tablet-width) {
-    margin: initial;
+    margin: 0;
     margin-left: 7px;
   }
 }
 
 .footer__social {
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin: initial;
+    margin: 0;
   }
 }
 
@@ -55,6 +55,6 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin: initial;
+    margin: 0;
   }
 }
