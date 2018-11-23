@@ -30,7 +30,7 @@
     font-size: 21px;
 
     br {
-      display: initial;
+      display: inline;
     }
   }
 }
@@ -60,7 +60,7 @@
     margin-top: 20px;
 
     br {
-      display: initial;
+      display: inline;
     }
   }
 
@@ -160,8 +160,16 @@
       margin-top: 21px;
 
       br {
-        display: initial;
+        display: inline;
       }
+    }
+  }
+}
+
+.advantage--bridge {
+  .advantage__image {
+    @media (min-width: $desktop-width) {
+      margin-top: -8px;
     }
   }
 }

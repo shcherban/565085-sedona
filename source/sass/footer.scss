@@ -1,6 +1,6 @@
 .footer {
   margin: 0 auto;
-  background-color: $white-bgcolor;
+  background-color: $footer-bgcolor;
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
@@ -10,14 +10,13 @@
 .footer__wrapper {
   margin: 0 auto;
   padding-top: 32px;
-  padding-bottom: 12px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 662px;
-    padding-top: 28px;
-    padding-bottom: 36px;
+    padding-top: 35px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +24,6 @@
 
   @media (min-width: $desktop-width) {
     width: 974px;
-    padding-top: 25px;
   }
 }
 
@@ -39,24 +37,24 @@
   color: $black-txtcolor;
 
   @media (min-width: $tablet-width) {
-    margin: initial;
+    margin: 0;
     margin-left: 7px;
   }
 }
 
 .footer__social {
   margin: 0 auto;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin: initial;
+    margin: 0;
   }
 }
 
 .footer__copyright {
   margin: 0 auto;
-  margin-top: 26px;
 
   @media (min-width: $tablet-width) {
-    margin: initial;
+    margin: 0;
   }
 }

@@ -1,24 +1,23 @@
 .feedback {
-  box-sizing: border-box;
-  min-height: 286px;
+  padding-top: 1px;
+  padding-bottom: 49px;
   text-align: center;
   background-color: $white-bgcolor;
-  border: 1px solid $white-bgcolor;
 
   br {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 317px;
+    padding-bottom: 58px;
 
     br {
-      display: initial;
+      display: inline;
     }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 333px;
+    padding-bottom: 66px;
   }
 }
 

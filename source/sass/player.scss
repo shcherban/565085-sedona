@@ -59,20 +59,25 @@
   background-position: 50% 50%;
   background-color: transparent;
   border: none;
+
+  svg {
+    path,
+    polygon {
+      fill: $player-buttons-color-mob;
+
+      @media (min-width: $tablet-width) {
+        fill: $white-txtcolor;
+      }
+    }
+  }
 }
 
 .player__replay {
   margin-right: auto;
-  background-image: url("../img/icon-video-replay.svg");
-}
-
-.player__subtitles {
-  background-image: url("../img/icon-video-subtitles.svg");
 }
 
 .player__fullscreen {
-  margin-left: 24px;
-  background-image: url("../img/icon-video-fullscreen.svg");
+  margin-left: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,7 +95,7 @@
   }
 
   .player__control-panel {
-    width: initial;
+    width: 100%;
   }
 
   .player__volume {

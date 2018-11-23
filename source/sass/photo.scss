@@ -1,9 +1,8 @@
 .photo {
   display: block;
-  width: 280px;
+  width: $mobile-width - 2 * 20px;
   margin: 0 auto;
-  padding-top: 22px;
-  padding-bottom: 17px;
+  padding: 22px 20px 17px 20px;
 
   font-size: 14px;
   line-height: 24px;
@@ -22,7 +21,7 @@
 }
 
 .photo__info {
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 .photo__legend {
@@ -35,7 +34,7 @@
 
 .photo__autor {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 
   color: $dark-gray-txtcolor;
   text-transform: none;
@@ -43,22 +42,22 @@
 
 .photo__likes {
   margin: 0;
+  padding-top: 3px;
   display: flex;
   align-items: center;
   font-weight: bold;
   color: $black-txtcolor;
+
+  svg {
+    margin-right: 14px;
+    opacity: 0.3;
+  }
+
+  span {
+    margin-top: 4px;
+  }
 }
 
-.photo__likes::before {
-  content: "";
-  width: 22px;
-  height: 24px;
-  margin-right: 14px;
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-size: 22px 20px;
-  background-position: 0 0;
-}
 
 @media (min-width: $tablet-width) {
   .photo {
@@ -84,7 +83,7 @@
 
   .photo__info {
     padding-top: 9px;
-    padding-bottom: 9px;
+    padding-bottom: 17px;
     display: flex;
     justify-content: space-between;
 
@@ -99,6 +98,14 @@
   .photo__likes {
     padding-top: 0;
     width: 85px;
+
+    svg {
+      margin-right: 10px;
+    }
+
+    span {
+      margin-top: 7px;
+    }
   }
 
   .photo__likes::before {
@@ -118,6 +125,8 @@
   .photo__info {
     position: relative;
     margin-top: -81px;
+    padding-top: 11px;
+    padding-bottom: 16px;
 
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -126,5 +135,13 @@
   .photo__autor,
   .photo__likes {
     color: $white-txtcolor;
+
+    svg {
+      opacity: 1;
+
+      path {
+        fill: $white-txtcolor;
+      }
+    }
   }
 }

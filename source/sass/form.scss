@@ -107,6 +107,11 @@
     padding-left: 80px;
     padding-right: 0;
   }
+
+  input {
+    min-width: 50px;
+    flex-grow: 1;
+  }
 }
 
 .form__fieldset--contacts {

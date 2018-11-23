@@ -1,14 +1,14 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff") format("woff"),
-    url("../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff") format("woff"),
-    url("../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
 }
 
@@ -16,9 +16,20 @@ body {
   min-width: $mobile-width;
   padding: 0;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: $black-txtcolor;
   background-color: $base-bgcolor;
+}
+
+.background {
+  background-color: $white-bgcolor;
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 img {
