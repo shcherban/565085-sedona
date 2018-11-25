@@ -45,6 +45,7 @@
     height: 518px;
     padding-top: 77px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 100% auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
       background-image: url("../img/bg-back-tablet@2x.jpg");

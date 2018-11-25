@@ -5,7 +5,7 @@
 
 .advantage__description {
   @media (min-width: $tablet-width) {
-    width: 33.3%;
+    flex-grow: 1;
     padding-top: 44px;
   }
 }
@@ -80,6 +80,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    flex-grow: 2;
     width: 100%;
   }
 }
@@ -101,6 +102,7 @@
 
 .advantage--colorful {
   width: 100%;
+  background-color: $sky-blue;
 
   .advantage__description {
     padding-top: 39px;
@@ -136,6 +138,7 @@
     overflow: hidden;
 
     display: flex;
+    justify-content: center;
     align-items: center;
 
     .advantage__description {

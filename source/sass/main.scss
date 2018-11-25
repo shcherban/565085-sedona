@@ -9,7 +9,7 @@
 }
 
 .main__header {
-  padding-top: 39px;
+  padding-top: 38px;
   padding-bottom: 5px;
   position: relative;
   background-color: $white-bgcolor;
@@ -61,6 +61,7 @@
 .main__title {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 28px;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -80,7 +81,6 @@
 .main__preface {
   width: 270px;
   margin: 0 auto;
-  margin-top: 27px;
   text-align: center;
   font-size: 14px;
   line-height: 26px;
@@ -93,10 +93,11 @@
 }
 
 .main__header--photo {
-  padding-top: 37px;
-  padding-bottom: 26px;
+  padding-top: 36px;
+  padding-bottom: 27px;
 
   .main__preface {
+    width: 271px;
     line-height: 24px;
   }
 
@@ -125,7 +126,11 @@
 
 .main__header--form {
   padding-top: 37px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
+
+  .main__title {
+    margin-bottom: 25px;
+  }
 
   .main__preface {
     width: 320px;
