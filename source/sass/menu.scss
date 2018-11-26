@@ -88,6 +88,21 @@
   }
 }
 
+@media (max-width: $tablet-width - 1) {
+  .menu__link:hover,
+  .menu__link:focus {
+    @include button-hover();
+  }
+
+  .menu__link:active {
+    @include button-down();
+  }
+}
+
+.menu-link:active {
+  @include button-down();
+}
+
 @media (min-width: $tablet-width) {
   .menu__link:hover,
   .menu__link:focus {
