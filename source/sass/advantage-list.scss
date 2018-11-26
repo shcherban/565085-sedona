@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     min-height: 256px;
   }
 }
