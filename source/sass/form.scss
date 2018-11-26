@@ -382,6 +382,7 @@
 .form__input--tel:hover,
 .form__input--email:hover,
 .form__input--checkbox:hover + label::before,
+.form__input--checkbox:focus + label::before,
 .form__input--textarea:hover {
   background-color: $input-hover-bgcolor;
 }
