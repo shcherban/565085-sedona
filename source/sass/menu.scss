@@ -87,3 +87,23 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .menu__link:hover,
+  .menu__link:focus {
+    color: $menu-hover-txtcolor;
+  }
+
+  .menu__link--active {
+    color: $menu-active-txtcolor;
+  }
+
+  .menu__link--active:hover,
+  .menu__link--active:focus {
+    color: $menu-active-hover-txtcolor;
+  }
+
+  .menu__link:active {
+    opacity: 0.3;
+  }
+}
