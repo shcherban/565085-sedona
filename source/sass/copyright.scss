@@ -25,3 +25,16 @@
 .copyright__link-image path {
   fill: $black-txtcolor;
 }
+
+.copyright__link:hover,
+.copyright__link:focus {
+  .copyright__link-image path {
+    fill: $sky-blue;
+  }
+}
+
+.copyright__link:active {
+  .copyright__link-image path {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
