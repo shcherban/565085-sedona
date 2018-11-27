@@ -43,8 +43,9 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("clean", function () {
-  return del("build");
+gulp.task("clean", function (done) {
+  del("build");
+  done();
 });
 
 gulp.task("copy", function () {
