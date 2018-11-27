@@ -66,6 +66,8 @@
 
 .header__tagline {
   display: block;
+  width: 281px;
+  height: 214px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -77,6 +79,11 @@
 .header__banner--short {
   height: 158px;
   padding-top: 52px;
+
+  .header__tagline {
+    width: 230px;
+    height: 40px;
+  }
 
   @media (min-width: $tablet-width) {
     height: 290px;
