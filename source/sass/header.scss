@@ -32,6 +32,7 @@
   box-sizing: border-box;
   height: 389px;
   padding-top: 90px;
+  background-color: $light-skyblue-bgcolor;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -45,6 +46,7 @@
     height: 518px;
     padding-top: 77px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 100% auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
       background-image: url("../img/bg-back-tablet@2x.jpg");

@@ -5,7 +5,7 @@
   background-color: $sky-blue;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -85,5 +85,40 @@
     @media (min-width: $tablet-width) {
       box-shadow: none;
     }
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .menu__link:hover,
+  .menu__link:focus {
+    @include button-hover();
+  }
+
+  .menu__link:active {
+    @include button-down();
+  }
+}
+
+.menu-link:active {
+  @include button-down();
+}
+
+@media (min-width: $tablet-width) {
+  .menu__link:hover,
+  .menu__link:focus {
+    color: $menu-hover-txtcolor;
+  }
+
+  .menu__link--active {
+    color: $menu-active-txtcolor;
+  }
+
+  .menu__link--active:hover,
+  .menu__link--active:focus {
+    color: $menu-active-hover-txtcolor;
+  }
+
+  .menu__link:active {
+    opacity: 0.3;
   }
 }

@@ -1,8 +1,7 @@
 .copyright {
-  width: 135px;
-  padding-left: 5px;
+  width: 140px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -13,12 +12,29 @@
   color: $black-txtcolor;
 }
 
+.copyright__link {
+  width: 40px;
+  height: 40px;
+}
+
 .copyright__link-image {
   width: 40px;
-  height: auto;
-  margin-left: 5px;
+  height: 40px;
 }
 
 .copyright__link-image path {
   fill: $black-txtcolor;
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  .copyright__link-image path {
+    fill: $sky-blue;
+  }
+}
+
+.copyright__link:active {
+  .copyright__link-image path {
+    fill: rgba(0, 0, 0, 0.3);
+  }
 }

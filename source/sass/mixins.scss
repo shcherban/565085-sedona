@@ -22,3 +22,16 @@
     }
   }
 }
+
+@mixin button-hover() {
+  background-color: $button-hover-bgcolor;
+}
+
+@mixin button-down() {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $button-down-bgcolor;
+}
+
+@mixin button-disabled() {
+  background-color: $button-disabled-bgcolor;
+}

@@ -9,13 +9,13 @@
 
 .footer__wrapper {
   margin: 0 auto;
-  padding-top: 32px;
+  padding-top: 33px;
+  padding-bottom: 4px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 662px;
-    padding-top: 35px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -44,10 +44,11 @@
 
 .footer__social {
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-top: 2px;
   }
 }
 

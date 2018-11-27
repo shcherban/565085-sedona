@@ -8,14 +8,15 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     min-height: 256px;
   }
 }
 
 .advantage-list__item {
-  width: 280px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  width: 250px;
+  padding-top: 25px;
+  padding-bottom: 29px;
   border-bottom: 1px solid $dark-gray-border-color;
 
   @media (min-width: $tablet-width) {

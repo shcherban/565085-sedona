@@ -28,11 +28,22 @@
 .social__link svg {
   margin-top: 17px;
 
-  path {
-    fill: $white-txtcolor;
-  }
+  fill: $white-txtcolor;
 }
 
 .social__link--facebook svg {
   margin-top: 14px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  @include button-hover();
+}
+
+.social__link:active {
+  @include button-down();
+
+  svg {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }

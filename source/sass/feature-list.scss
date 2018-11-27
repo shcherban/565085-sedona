@@ -8,10 +8,11 @@
   background-color: $white-bgcolor;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    width: 100%;
     min-height: 330px;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -21,8 +22,8 @@
 }
 
 .feature-list__item {
-  padding-left: 68px;
-  padding-top: 28px;
+  padding-left: 70px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     width: 33.3%;
@@ -33,7 +34,7 @@
 
 .feature-list__title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -105,6 +106,16 @@
   @media (min-width: $tablet-width) {
     background-size: 77px auto;
     background-position: 50% 62px;
+
+    .feature-list__text {
+      width: 155px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .feature-list__text {
+      width: 300px;
+    }
   }
 }
 

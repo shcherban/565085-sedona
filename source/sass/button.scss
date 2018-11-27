@@ -13,3 +13,16 @@
   background-color: $sky-blue;
   border: none;
 }
+
+.button:hover,
+.button:focus {
+  @include button-hover();
+}
+
+.button:active {
+  @include button-down();
+}
+
+.button:disabled {
+  @include button-disabled();
+}

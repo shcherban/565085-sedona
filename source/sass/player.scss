@@ -61,23 +61,45 @@
   border: none;
 
   svg {
-    path,
-    polygon {
-      fill: $player-buttons-color-mob;
+    fill: $player-buttons-color-mob;
 
-      @media (min-width: $tablet-width) {
-        fill: $white-txtcolor;
-      }
+    @media (min-width: $tablet-width) {
+      fill: $white-txtcolor;
     }
   }
 }
 
-.player__replay {
+.player__button--replay {
   margin-right: auto;
 }
 
-.player__fullscreen {
-  margin-left: 30px;
+.player__button--subtitles {
+  padding: 0;
+}
+
+.player__button--fullscreen {
+  margin-left: 24px;
+}
+
+.player__button:hover,
+.player__button:focus {
+  svg {
+    fill: $dark-gray-txtcolor;
+
+    @media (min-width: $tablet-width) {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.player__button:active {
+  svg {
+    fill: rgba(51, 51, 51, 0.3);
+
+    @media (min-width: $tablet-width) {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
