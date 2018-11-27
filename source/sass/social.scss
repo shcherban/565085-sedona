@@ -28,9 +28,7 @@
 .social__link svg {
   margin-top: 17px;
 
-  path {
-    fill: $white-txtcolor;
-  }
+  fill: $white-txtcolor;
 }
 
 .social__link--facebook svg {
@@ -45,7 +43,7 @@
 .social__link:active {
   @include button-down();
 
-  svg path {
+  svg {
     fill: rgba(255, 255, 255, 0.3);
   }
 }
