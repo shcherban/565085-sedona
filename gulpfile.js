@@ -89,7 +89,7 @@ gulp.task("images", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("build/img/icon-*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
