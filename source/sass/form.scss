@@ -346,6 +346,7 @@
 
 .form__input--radio + label::before {
   content: "";
+  display: block;
   width: 21px;
   height: 21px;
   margin-left: 2px;
@@ -382,6 +383,7 @@
 
 .form__input--checkbox + label::before {
   content: "";
+  display: block;
   width: 56px;
   height: 56px;
   margin-right: 23px;
