@@ -47,6 +47,7 @@
     padding-top: 77px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 100% auto;
+    background-position: 50% 50%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -57,6 +58,7 @@
     padding-top: 78px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 1200px auto;
+    background-position: 50% 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -79,6 +81,7 @@
 .header__banner--short {
   height: 158px;
   padding-top: 52px;
+  background-position: 50% 100%;
 
   .header__tagline {
     width: 230px;
